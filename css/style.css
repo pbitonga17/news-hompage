@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ body {
+    min-height: 100vh;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+
+    margin: 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+.main {
+    display: grid;
+    gap: 2rem;
+}
+.web3-img {
+    max-width: 100%;
+ }
+
+/* ------ SECTION ONE ------ */
+.main__section-one {
+    display: grid;
+    gap: 0.7rem;
+}
+.section-one--heading1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+}
+.section-one--prgrph {
+    font-size: 0.95rem;
+    line-height: 1.5rem;
+    color: hsl(233, 8%, 79%);
+}
+.section-one--read-more {
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    border: hsl(5, 85%, 63%);
+    padding: 1rem;
+    width: 50%;
+}
+
+/* ------ SECTION TWO ------ */
+
+.main__section-two {
+    display: grid;
+    gap: 1.6rem;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding: 2rem 1.5rem;
+}
+.section-two--heading2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+}
+.section-two--heading3 {
+    font-size: 1.2rem;
+}
+.section-two--prgrph {
+    font-size: 0.8rem;
+    color: hsl(233, 8%, 79%);
+}
+hr {
+    color: hsl(233, 8%, 79%);
+}
+
+/* ------ SECTION THREE ------ */
+
+.main__section-three {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 50px;
+}
+.div-img {
+    max-width: 100%;
+    height: 110px;
+}
+.div--text {
+    display: grid;
+    gap: 0.5rem;
+}
+.section-three--heading2 {
+    color: hsl(233, 8%, 79%);
+    font-size: 1.5rem;
+}
+.section-three--heading3 {
+    font-size: 1.2rem;
+}
+.section-three--prgph {
+    color: hsl(233, 8%, 79%);
+    font-size: 1rem;
+}
+.section-three--div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
