@@ -111,3 +111,34 @@ hr {
     gap: 1rem;
     align-items: center;
 }
+
+
+/* ------ MEDIA QUERY FOR DESKTOP ------ */
+
+@media screen and (min-width: 1440px) {
+    body {
+        min-height: 100vh;
+        max-width: 60rem;
+
+        margin: 0 auto;
+    }
+    .header__icon-menu,
+    .web3-img {
+        display: none;
+    }
+
+    .header__unorder-list {
+        display: flex;
+        font-size: 1rem;
+        gap: 3rem;
+        list-style: none;
+        color: hsl(233, 8%, 79%);
+    }
+    .main__section-one::before {
+        content: '';
+        width: 50%;
+        height: 50%;
+        background-image: url(../assets/images/image-web-3-desktop.jpg);
+        
+    }
+}
