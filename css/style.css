@@ -24,18 +24,25 @@
     justify-content: space-between;
     margin-top: 5vw;
 }
+.header__selector {
+    display: none;
+}
 .main {
     display: grid;
     gap: 2rem;
 }
-.web3-img {
+.web3-img--mobile {
     max-width: 100%;
+    max-height: 100%;
  }
 
 /* ------ SECTION ONE ------ */
 .main__section-one {
     display: grid;
     gap: 0.7rem;
+}
+.web3-img--desktop {
+    display: none;
 }
 .section-one--heading1 {
     font-size: 2.5rem;
@@ -119,14 +126,12 @@ hr {
     body {
         min-height: 100vh;
         max-width: 60rem;
-
         margin: 0 auto;
     }
     .header__icon-menu,
-    .web3-img {
+    .web3-img--mobile {
         display: none;
     }
-
     .header__unorder-list {
         display: flex;
         font-size: 1rem;
@@ -134,11 +139,37 @@ hr {
         list-style: none;
         color: hsl(233, 8%, 79%);
     }
-    .main__section-one::before {
-        content: '';
-        width: 50%;
-        height: 50%;
-        background-image: url(../assets/images/image-web-3-desktop.jpg);
-        
+    .header__selector {
+        display: flex;
+        cursor: pointer;
+    }
+    /* ------ SECTION ONE FOR DESKTOP ------ */
+    .section-one--read-more {
+        cursor: pointer;
+    }
+    .web3-img--desktop {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    /* ------ GRID AREA ------ */
+    .web3-img--desktop {
+        display: grid;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .main__section-one--div {
+        display: grid;
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+    .main__section-two {
+        display: grid;
+        grid-column: 3/4;
+        grid-row: 2/2;
+    }
+    .section-three--div {
+        display: grid;
     }
 }
